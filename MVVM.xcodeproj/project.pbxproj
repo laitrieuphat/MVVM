@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA9A1FA42E6A78CE004A78FB /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = BA9A1FA32E6A78CE004A78FB /* Script.sh */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BA9A1F862E698A15004A78FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		BA9A1F6F2E698A0C004A78FB /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A1F852E698A15004A78FB /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A1F8F2E698A15004A78FB /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9A1FA32E6A78CE004A78FB /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +93,7 @@
 		BA9A1F662E698A0C004A78FB = {
 			isa = PBXGroup;
 			children = (
+				BA9A1FA32E6A78CE004A78FB /* Script.sh */,
 				BA9A1F712E698A0C004A78FB /* MVVM */,
 				BA9A1F882E698A15004A78FB /* MVVMTests */,
 				BA9A1F922E698A15004A78FB /* MVVMUITests */,
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9A1FA42E6A78CE004A78FB /* Script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
