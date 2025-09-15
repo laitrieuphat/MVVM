@@ -35,7 +35,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BA9A1F972E698A15004A78FB /* Exceptions for "MVVM" folder in "MVVM" target */ = {
+		BA6967182E77A5E10068F4C8 /* Exceptions for "MVVM" folder in "MVVM" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -45,10 +45,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BA9A1F712E698A0C004A78FB /* MVVM */ = {
+		BA69670F2E77A5E10068F4C8 /* MVVM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				BA9A1F972E698A15004A78FB /* Exceptions for "MVVM" folder in "MVVM" target */,
+				BA6967182E77A5E10068F4C8 /* Exceptions for "MVVM" folder in "MVVM" target */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				BA9A1FA32E6A78CE004A78FB /* Script.sh */,
-				BA9A1F712E698A0C004A78FB /* MVVM */,
+				BA69670F2E77A5E10068F4C8 /* MVVM */,
 				BA9A1F882E698A15004A78FB /* MVVMTests */,
 				BA9A1F922E698A15004A78FB /* MVVMUITests */,
 				BA9A1F702E698A0C004A78FB /* Products */,
@@ -127,7 +127,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BA9A1F712E698A0C004A78FB /* MVVM */,
+				BA69670F2E77A5E10068F4C8 /* MVVM */,
 			);
 			name = MVVM;
 			packageProductDependencies = (
@@ -301,7 +301,6 @@
 				INFOPLIST_FILE = MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +328,6 @@
 				INFOPLIST_FILE = MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

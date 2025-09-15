@@ -9,8 +9,7 @@ import Foundation
 
 final class UserListViewModel {
     private let service: UserServiceProtocol
-    private(set) var users:[User] = []
-    var onUpdate: (() -> Void)?
+    private(set) var users:Obseverable<[User]> = Obseverable([])
     
 
     init(service: UserServiceProtocol = UserService()) {
@@ -21,19 +20,16 @@ final class UserListViewModel {
         service.fetchUsers { [weak self] result in
             switch result{
             case .success(let users):
-                self?.users = users
-                self?.onUpdate?()
+                self?.users.value = users
             case .failure(_):
-                self?.users = []
-                self?.onUpdate?()
+                self?.users.value = []
             }
         }
     }
 
     func user(at index: Int) -> User? {
-        guard users.indices.contains(index) else { return nil }
-        return users[index]
+        guard users.value.indices.contains(index) else { return nil }
+        return users.value[index]
     }
-    
     
 }

@@ -12,16 +12,22 @@ class UserListViewController: UIViewController {
     private let viewModel = UserListViewModel()
     private let tableView = UITableView()
     
+    let indicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        return indicator
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "User"
-         view.backgroundColor = .systemBackground
-         setupTableView()
-         bindViewModel()
-         viewModel.loadUsers()
-
-
+        view.backgroundColor = .systemBackground
+        setupTableView()
+        bindViewModel()
+        viewModel.loadUsers()
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -41,7 +47,7 @@ class UserListViewController: UIViewController {
     
     
     private func bindViewModel() {
-        viewModel.onUpdate = { [weak self] in
+        viewModel.users.bind { [weak self] _ in
             self?.tableView.reloadData()
         }
     }
@@ -49,9 +55,9 @@ class UserListViewController: UIViewController {
 
 extension UserListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.users.count
+        return viewModel.users.value.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if let user = viewModel.user(at: indexPath.row) {
@@ -60,7 +66,7 @@ extension UserListViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         // Example: simple detail alert
@@ -71,4 +77,4 @@ extension UserListViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
 }
-    
+
