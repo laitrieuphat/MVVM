@@ -1,0 +1,3 @@
+- Đang học cách MVVM hoạt động 
+- Đã tạo obserbale class dùng closure để quan sát và xử lý khi có đối tượng trả về
+- UserlistViewController and ChosingRandomViewController
